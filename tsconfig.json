@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2018",
+      "dom",
+      "es6",
+      "es2015.iterable"
+    ],
+    "paths": {
+      "@src/*": [
+        "src/*.android.ts",
+        "src/*.ios.ts",
+        "src/*.tns.ts",
+        "src/*.web.ts",
+        "src/*"
+      ]
+    }
+  }
+}

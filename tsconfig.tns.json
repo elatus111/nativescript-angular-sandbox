@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@src/*": [
+        "src/*.tns.ts",
+        "src/*.ts",
+        "src/*"
+      ],
+    }
+  },
+  "files": [
+    "src/main.tns.ts"
+  ],
+  "exclude": [
+    "src/app/**/*.spec.ts"
+  ],
+  "include": [
+    "src/tests/test-main.ts",
+    "src/tests/**/*.spec.ts",
+    "src/**/*.d.ts"
+    ]
+}
